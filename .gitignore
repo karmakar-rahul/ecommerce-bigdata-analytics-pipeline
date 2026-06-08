@@ -1,0 +1,35 @@
+# Virtual Environment
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Hadoop / Spark Logs
+logs/
+*.log
+
+# Generated Datasets
+data/*.csv
+data/*.parquet
+
+# Dashboard Generated Data
+dashboard/data/
+
+# Spark Output
+spark-warehouse/
+
+# Hive
+metastore_db/
+derby.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+
+# Temporary Files
+*.tmp
+*.swp
