@@ -1,3 +1,4 @@
+from streamlit_autorefresh import st_autorefresh
 import streamlit as st
 import pandas as pd
 import plotly.express as px
@@ -6,6 +7,7 @@ from utils import load_csv
 
 st.title("Revenue Analytics")
 
+st_autorefresh(interval = 1000, key = "refresh")
 category = load_csv(
     "revenue_by_category.csv"
 )

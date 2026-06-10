@@ -1,7 +1,10 @@
 import streamlit as st
-
+from streamlit_autorefresh import st_autorefresh
 st.title("Customer Analytics")
-
+st_autorefresh(
+    interval=10000,
+    key="refresh"
+)
 st.warning(
     "Customer segmentation KPIs will be enabled in the next analytics refresh."
 )

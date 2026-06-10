@@ -1,10 +1,14 @@
+
 import streamlit as st
 import plotly.express as px
 
 from utils import load_csv
-
+from streamlit_autorefresh import st_autorefresh
 st.title("Product Analytics")
-
+st_autorefresh(
+    interval=10000,
+    key="refresh"
+)
 products = load_csv(
     "top_products.csv"
 )

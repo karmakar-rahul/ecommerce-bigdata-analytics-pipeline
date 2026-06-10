@@ -33,3 +33,6 @@ derby.log
 # Temporary Files
 *.tmp
 *.swp
+.venv/
+__pycache__/
+*.pyc

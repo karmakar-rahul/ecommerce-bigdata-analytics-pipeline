@@ -1,9 +1,14 @@
+from streamlit_autorefresh import st_autorefresh
 import streamlit as st
 import plotly.express as px
 
 from utils import load_csv
 
 st.title("Executive Overview")
+st_autorefresh(
+    interval=10000,
+    key="refresh"
+)
 
 payment = load_csv(
     "payment_summary.csv"
